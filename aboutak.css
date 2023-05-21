@@ -1,0 +1,249 @@
+#about {
+  padding: 70px 30px;
+}
+
+.heading {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 10px;
+
+
+}
+
+.d-sp {
+  width: 80px;
+  height: 4px;
+  background-color: var(--themeColor);
+  border-radius: 3px;
+}
+
+#about .d-sp~p {
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+#about .about-sps {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+
+}
+
+#about .about-sps .img-c {
+  flex-basis: 35%;
+  text-align: center;
+
+}
+
+#about .about-sps .img-c img {
+  width: 100%;
+}
+
+#about .about-sps .info-c {
+  flex-basis: 70%;
+}
+
+#about .about-sps .info-c h2 {
+  color: var(--themeColor);
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  margin-top: -10px;
+}
+
+#about .about-sps .info-c p {
+  color: var(--textColor);
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-style: italic;
+}
+
+#about .about-sps .info-c .icon-l-c {
+  display: flex;
+  margin-top: 20px;
+  gap: 40px;
+}
+
+#about .about-sps .info-c .icon-l-c .icon-l ul li {
+  list-style: none;
+  margin: 15px 0;
+
+}
+
+#about .about-sps .info-c .icon-l-c .icon-l ul li i {
+  color: var(--themeColor);
+}
+
+#about .about-sps .info-c .icon-l-c .icon-l ul li strong {
+  color: var(--sideBGcolor);
+  font-weight: 600;
+  margin-right: 2px;
+}
+
+#about .about-sps .info-c .icon-l-c .icon-l ul li span {
+  color: var(--textColor);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 850px) {
+  #about {
+      padding: 50px;
+  }
+
+  #about .d-sp~p {
+      color: var(--textColor);
+      font-size: 14px;
+      letter-spacing: 0px;
+      text-align: justify;
+  }
+
+  #about .about-sps {
+      flex-direction: column;
+
+  }
+
+  #about .about-sps .img-c img {
+      width: 50%;
+  }
+
+  #about .about-sps .info-c h2 {
+      font-weight: 700;
+      font-size: 25px;
+      letter-spacing: 0px;
+
+  }
+
+  #about .about-sps .info-c p {
+      font-size: 15px;
+      letter-spacing: 0px;
+  }
+  #about .about-sps .info-c .icon-l-c {
+      flex-direction: column;
+      gap: 0;
+  }
+  #about .about-sps .info-c .icon-l-c .icon-l ul li {
+      margin: 10px 0;
+  
+  }
+  #about .about-sps .info-c .icon-l-c .icon-l ul li strong {
+      font-weight: 500;
+      margin-right: 0;
+  }
+  #about .about-sps .info-c .icon-l-c .icon-l ul li span {
+      color: var(--textColor);
+      font-weight: 400;
+      font-size: 13px;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+  #about .about-sps .img-c img {
+      width: 90%;
+  }
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+  font-family: 'Foldit', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik Pixels', cursive; */
+}
+
+body {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  background: linear-gradient(white,lightgreen);
+  height: 80px;
+}
+
+.logo {
+
+  font-size: 30px;
+  margin: 0 100px;
+  line-height: 80px;
+  /* font-family: 'Foldit', cursive;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik Pixels', cursive; */
+}
+
+.logo img {
+  padding-top: 17px;
+  width: 60px;
+  height: 50px;
+
+}
+
+nav ul {
+  float: right;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  color: rgb(103, 37, 247);
+  line-height: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+nav ul li a {
+  color: rgb(58, 34, 242);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 20px;
+  margin: 4px 4px;
+}
+
+#checkbtn {
+  float: right;
+  line-height: 80px;
+  margin-right: 10px;
+  font-size: 20px;
+  display: block;
+  color: rgb(58, 34, 242);
+  display: none;
+}
+#check {
+  display: none;
+}
+
+#check:checked~ul {
+  left: 0;
+}
+
+@media(max-width:1195px) {
+  #checkbtn {
+      display: block;
+  }
+
+  nav ul {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(white,lightgreen);
+      position:fixed;
+      top: 80px;
+      left: -100%;
+  }
+
+  nav ul li {
+      display: block;
+      text-align: center;
+      line-height: 40px;
+      margin:15px;
+  }
+
+}
